@@ -1,0 +1,18 @@
+# Ignore private keys
+id_rsa
+id_rsa.pub
+.kube/
+# Ignore other secret files
+*.env
+secrets/
+
+.ssh/authorized_keys
+.ssh/id_rsa
+.ssh/id_rsa.pub
+.ssh/known_hosts
+
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+.viminfo

@@ -4,7 +4,7 @@ metadata:
   name: webapp-deployment
   namespace: web
 spec:
-  replicas: 3  # Change this based on your needs
+  replicas: 3
   selector:
     matchLabels:
       app: employees
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: web-app
-          image: 624571715162.dkr.ecr.us-east-1.amazonaws.com/webapp:v0.1
+          image: 624571715162.dkr.ecr.us-east-1.amazonaws.com/webapp:v0.2  # Updated image version
           ports:
             - containerPort: 8080
           env:
@@ -30,5 +30,5 @@ spec:
             - name: DBPWD
               value: "pw"
             - name: APP_COLOR
-              value: "blue"
+              value: "red"
 
